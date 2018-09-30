@@ -1,0 +1,9 @@
+<?php
+if(isset($_SESSION["type"])){
+	if($_SESSION["type"]!="admin"){
+		header('Location:loginadmin11.php');
+	}
+}else{
+	header('Location:loginadmin11.php');
+}
+?>
